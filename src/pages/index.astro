@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
+import HeroSpark from '~/components/widgets/HeroSpark.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -21,33 +21,39 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
+  <HeroSpark
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white"> SPARK :</span>First International Workshop on Spatial Intelligence and Reasoning Enabled by Knowledge Graphs
+      <span class="text-highlight">SPARK 2026</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+
+			<h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl lg:text-4xl text-white">
+				First International Workshop on Spatial Intelligence and Reasoning Enabled by Knowledge Graphs
+			</h2>
+
+			<h3 class="text-xl font-bold mt-4">25/26 October 2026 - Bari, Italy</h3>
+			<h3 class="text-xl font-bold mt-4">
+				co-located with The 25th International Semantic Web Conference, ISWC 2026
+			</h3>
+
+				<div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+					<div class="flex w-full sm:w-auto">
+
+						<a class="btn-primary w-full px-4 py-1 sm:mb-0" target="_blank" rel="noopener noreferrer" href="https://iswc2026.semanticweb.org/">ISWC 2026<svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5 ml-1 -mr-1.5 rtl:mr-1 rtl:-ml-1.5 inline-block" data-icon="tabler:rocket">   <use href="#ai:tabler:rocket"></use>  </svg></a>
+
+					</div>
+				</div>
+
+
     </Fragment>
-  </Hero>
+
+
+
+
+  </HeroSpark>
 
   <!-- Note Widget ******************* -->
 

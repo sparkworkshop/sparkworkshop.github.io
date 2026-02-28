@@ -1,0 +1,56 @@
+---
+import Image from '~/components/common/Image.astro';
+
+import heroImg from "~/assets/images/hero-spark_1.jpg";
+
+import type { Hero as Props } from '~/types';
+
+const {
+	title = await Astro.slots.render('title'),
+	subtitle = await Astro.slots.render('subtitle'),
+	tagline,
+
+	content = await Astro.slots.render('content'),
+	image = await Astro.slots.render('image'),
+	
+	id,
+	bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+<section class="relative md:-mt-[76px] not-prose bg-cover bg-center bg-no-repeat py-16"
+	style={`background-image: url(${heroImg.src});`}>
+
+	<div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+		<slot name="bg">
+			{bg ? <Fragment set:html={bg} /> : null}
+		</slot>
+	</div>
+	<div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+		<div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+		<div class="py-12 md:py-20">
+			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+				{
+					title && (
+						<h1
+							class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+							set:html={title}
+						/>
+					)
+				}
+				<div class="max-w-3xl mx-auto">
+					{
+						subtitle && (
+							<p
+								class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+								set:html={subtitle}
+							/>
+						)
+					}
+
+				</div>
+
+				{content && <Fragment set:html={content} />}
+			</div>
+		</div>
+	</div>
+</section>
