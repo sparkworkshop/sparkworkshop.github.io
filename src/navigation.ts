@@ -116,7 +116,7 @@ export const headerData = {
 		},
 		{
 			text: 'Topics',
-			href: '#keynote',
+			href: '#topics',
 		},
 		{
 			text: 'Important Dates',

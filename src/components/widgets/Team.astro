@@ -1,0 +1,103 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+import type { Chairs as Props } from '~/types';
+
+const {
+	title = '',
+	subtitle = '',
+	chairs = [],
+
+	id,
+	isDark = false,
+	classes = {},
+	bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+	<Headline title={title} subtitle={subtitle}/>
+
+
+
+  <!-- <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"> -->
+
+
+
+
+<div class="py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+
+		{
+			chairs &&
+				chairs.map(({ name, affiliation, image, website, twitter, linkedin }) => (
+
+
+
+      <div class="mx-auto items-center flex max-w-xs flex-col gap-y-4">
+				
+				<div class="flex items-center">
+					{image && (
+						<div class="rounded-full border border-slate-200 dark:border-slate-600 ">
+							{typeof image === 'string' ? (
+								<Fragment set:html={image} />
+							) : (
+								<Image
+									class="rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
+									width={120}
+									height={120}
+									widths={[400, 768]}
+									layout="fixed"
+									{...image}
+								/>
+							)}
+						</div>
+					)}
+				</div>
+
+							<div class="mx-auto">
+								<p class="text-xl font-bold dark:text-white ml-2">{name}</h2>
+								<p class="text-muted mt-2">{affiliation}</p>
+							</div>
+
+
+<div class="flex gap-2 mt-4 justify-center">
+
+{website && (
+	<a href={website} target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition hover:scale-110">
+	<svg xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 640 640"><path d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM208 496C208 451.8 243.8 416 288 416L352 416C396.2 416 432 451.8 432 496C432 504.8 424.8 512 416 512L224 512C215.2 512 208 504.8 208 496z"/></svg>
+	</a>
+)}
+
+{linkedin && (
+	<a href={linkedin} target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition hover:scale-110">
+	<svg xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 640 640"><path d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"/></svg>
+	</a>
+)}
+
+{twitter && (
+	<a href={twitter} target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition hover:scale-110">
+	<svg xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 640 640"><path d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/></svg>
+	</a>
+)}
+
+</div>
+
+
+
+
+      </div>
+
+		))
+		}
+
+
+    </dl>
+  </div>
+</div>
+
+
+</WidgetWrapper>

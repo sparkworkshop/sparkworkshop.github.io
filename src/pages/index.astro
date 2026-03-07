@@ -11,9 +11,13 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
+import Team from '~/components/widgets/Team.astro';
 import Image from '~/components/common/Image.astro';
 import sparkLogo from "~/assets/images/spark_logo_1.png";
+
+import aminImage from "~/assets/images/Amin_Anjomshoaa.jpg";
+import manolisImage from "~/assets/images/Manolis_Koubarakis.jpeg";
+import hamidImage from "~/assets/images/Hamid_Rabiei.jpg";	
 
 const metadata = {
 	title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -78,61 +82,177 @@ const metadata = {
 
 	<!-- Note Widget ******************* -->
 
-	<Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+	<!-- <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" /> -->
 
 	<!-- Features Widget *************** -->
 
+<a name="about"></a>
 	<Features
 		id="features"
-		tagline="Features"
-		title="What you get with AstroWind"
-		subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+		title="About SPARK 2026"
+		subtitle="Spatial intelligence plays a central role in understanding, modeling, and reasoning about complex real-world phenomena that are inherently geographic and spatiotemporal. With the growing availability of geodata and spatiotemporal data from sensors, Earth observation systems, digital twins, and location-aware services, there is an increasing need for methods that can effectively integrate spatial aspects into knowledge-based systems.
+This workshop aims to bring together researchers and practitioners working on spatial intelligence, geospatial data management, and spatiotemporal reasoning, with a particular focus on their integration within Semantic Web and Knowledge Graph ecosystems."
 		items={[
 			{
-				title: 'Astro + Tailwind CSS Integration',
+				title: 'Spatial Knowledge Representation',
 				description:
-					'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+					'It seeks to support knowledge exchange on innovative approaches for representing, integrating, and reasoning over spatial and spatiotemporal data, bridging symbolic methods with sub-symbolic techniques, including machine learning, graph representation learning, and graph embeddings. The workshop invites research contributions that explore methods for modeling spatial and spatiotemporal information in knowledge graphs, advanced spatial reasoning, and the adoption of standards, vocabularies, and best practices to ensure interoperable geospatial and spatiotemporal data. ',
 				icon: 'tabler:brand-tailwind',
 			},
 			{
-				title: 'Ready-to-use Components',
+				title: 'Applications',
 				description:
-					'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+					'Furthermore, the workshop will highlight practical applications in domains such as smart cities, environmental monitoring, mobility, crisis management, and digital twins, demonstrating how the integration of knowledge graphs and spatial intelligence can enable advanced analytics and real-world decision-making.',
 				icon: 'tabler:components',
-			},
-			{
-				title: 'Best Practices',
-				description:
-					'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-				icon: 'tabler:list-check',
-			},
-			{
-				title: 'Excellent Page Speed',
-				description:
-					'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-				icon: 'tabler:rocket',
-			},
-			{
-				title: 'Search Engine Optimization (SEO)',
-				description:
-					"SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-				icon: 'tabler:arrows-right-left',
-			},
-			{
-				title: 'Open to new ideas and contributions',
-				description:
-					'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-				icon: 'tabler:bulb',
 			},
 		]}
 	/>
 
+
+	<!-- TOPICS Widget ******************* -->
+
+	<a name="topics"></a>
+	<FAQs
+		title="Topics of Interest"
+		subtitle="Topics of interest include, but are not limited to:"
+		classes={{ container: 'max-w-6xl' }}
+		items={[
+    {
+				title: 'Spatial and spatiotemporal reasoning in knowledge graphs',
+				description: ''
+		},
+    {
+				title: 'Geospatial Knowledge Graphs and ontologies',
+				description: ''
+		},
+    {
+				title: 'Semantic integration of geodata and heterogeneous spatial datasets',
+				description: ''
+		},
+    {
+				title: 'Spatial machine learning and AI for geospatial data',
+				description: ''
+		},
+    {
+				title: 'Spatial-temporal data modeling and analytics',
+				description: ''
+		},
+    {
+				title: 'Querying and retrieval of spatial knowledge',
+				description: ''
+		},
+    {
+				title: 'Reasoning over spatial relations, topologies, and hierarchies',
+				description: ''
+		},
+    {
+				title: 'Applications in smart cities, urban planning, and mobility',
+				description: ''
+		},
+    {
+				title: 'Environmental monitoring and climate data management',
+				description: ''
+		},
+    {
+				title: 'Crisis management and disaster response',
+				description: ''
+		},
+    {
+				title: 'Digital twins and simulation of physical environments',
+				description: ''
+		},
+		{
+				title: 'Geospatial IoT data integration and reasoning',
+				description: ''
+		},
+    {
+				title: 'Visualization, mapping, and spatial knowledge discovery',
+				description: ''
+			},
+
+		]}
+	/>
+
+
+
 	<!-- Content Widget **************** -->
+
+
+    \item Saeid Amini, Isfahan University, Iran
+    \item Robert Blackwell, The Turing Institute, UK
+    \item Tony Cohn, University of Leeds
+    \item Elena Demidova, University of Bonn
+    \item Simon Gottschalk, L3S, Leibniz University Hannover
+    \item Krzysztof Janowicz, University of Vienna
+    \item Mehrdad Koohikamali, California State Polytechnic University, USA
+    \item Shain Mohammad, Chamran University, Iran
+    \item Mina Sadeghi, K.N. Toosi University, Iran
+    \item Hannah Schuster, WU Vienna, Austria
+		\item Shahrom Sohi, WU Vienna, Austria
+    \item Cogan Shimizu, Wright State University, USA
+    \item Dimitris Skoutas, ATHENA Research Center, Greece
+    \item Rui Zhu, University of Bristol, UK
+
+
+
+<!-- \subsection{Amin Anjomshoaa}
+\textbf{Vienna University of Economics and Business (WU Vienna), Austria} 
+Homepage: \href {https://anjomshoaa.github.io/}{https://anjomshoaa.github.io/}
+
+
+\subsection{Manolis Koubarakis}
+
+\textbf{National and Kapodistrian University of Athens, Greece} 
+Homepage: \href{https://cgi.di.uoa.gr/~koubarak/}{https://cgi.di.uoa.gr/~koubarak/}
+
+\textbf{Dublin City University, Ireland} 
+Homepage: \href{https://www.dcu.ie/historygeography/people/hamid-rabiei}{https://www.dcu.ie/historygeography/people/hamid-rabiei}	 -->
+
+<a name="committees"></a>
+
+
+
+<Team
+  title="Organizing Committee"
+  subtitle="Workshop Co-chairs (alphabetically)"
+    chairs={[
+      {
+        name: 'Amin Anjomshoaa',
+		affiliation: 'Vienna University of Economics and Business, Austria',
+		website: 'https://anjomshoaa.github.io/',
+		twitter: 'https://twitter.com/aminbits',
+		linkedin: 'https://www.linkedin.com/in/amin-anjomshoaa-4a479227/',
+		image: {
+		  src: aminImage,
+		  alt: 'Amin Anjomshoaa Image',
+		},
+	  },
+	  {
+		name: 'Manolis Koubarakis',
+		affiliation: 'National and Kapodistrian University of Athens, Greece',
+		website: 'https://cgi.di.uoa.gr/~koubarak/',
+		linkedin: 'https://gr.linkedin.com/in/manolis-koubarakis-5bb32786',
+		image: {
+		  src: manolisImage,
+		  alt: 'Manolis Koubarakis Image',
+		},
+	  },
+	  {
+		name: 'Hamid Rabiei',
+		affiliation: 'Dublin City University, Ireland',
+		website: 'https://www.dcu.ie/historygeography/people/hamid-rabiei',
+		linkedin: 'https://ie.linkedin.com/in/hamid-rabiei-a4780843',
+		image: {
+		  src: hamidImage,
+		  alt: 'Hamid Rabiei Image',
+		},	
+	  },
+	]}
+/>
 
 	<Content
 		isReversed
-		tagline="Inside template"
-		title="AstroWind's Blueprint: Fun Meets Functionality!"
+		title="Organizing Committees"
 		items={[
 			{
 				title: 'Built on top of Astro 5.0',
@@ -241,35 +361,34 @@ const metadata = {
 	</Content>
 
 	<!-- Steps Widget ****************** -->
-
+	<a name="important-dates"></a>
 	<Steps
-		title="Get your dream website up and running in no time with AstroWind."
+		title="Important Dates"
 		items={[
 			{
-				title: 'Step 1: <span class="font-medium">Download</span>',
+				title: 'Paper submission',
 				description:
-					"Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+					"July 11th, 2026 (23:59, AoE timezone)",
 				icon: 'tabler:package',
 			},
 			{
-				title: 'Step 2: <span class="font-medium">Add content</span>',
-				description:
-					"Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+				title: 'Notification of acceptance',
+				description: 'August 8th, 2026',
 				icon: 'tabler:letter-case',
 			},
 			{
-				title: 'Step 3: <span class="font-medium">Customize styles</span>',
-				description:
-					'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+				title: 'Camera ready due',
+				description: 'Step 16th, 2026',
 				icon: 'tabler:paint',
 			},
 			{
-				title: 'Ready!',
+				title: 'Workshop day',
+				description: 'October 25-26, 2026',
 				icon: 'tabler:check',
 			},
 		]}
 		image={{
-			src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+			src: '~/assets/images/dates.avif',
 			alt: 'Steps image',
 		}}
 	/>
@@ -348,46 +467,6 @@ const metadata = {
 								`}
 	/>
 
-	<!-- FAQs Widget ******************* -->
-
-	<FAQs
-		title="Frequently Asked Questions"
-		subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-		tagline="FAQs"
-		classes={{ container: 'max-w-6xl' }}
-		items={[
-			{
-				title: 'Why AstroWind?',
-				description:
-					"Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-			},
-			{
-				title: 'What do I need to start?',
-				description:
-					'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-			},
-			{
-				title: 'How to install the Astro + Tailwind CSS template?',
-				description:
-					"Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-			},
-			{
-				title: "What's something that you don't understand?",
-				description:
-					"A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-			},
-			{
-				title: 'What is something that you would like to try again?',
-				description:
-					"A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-			},
-			{
-				title: 'If you could only ask one question to each person you meet, what would that question be?',
-				description:
-					"This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-			},
-		]}
-	/>
 
 	<!-- Stats Widget ****************** -->
 

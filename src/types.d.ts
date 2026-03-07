@@ -161,6 +161,16 @@ export interface Testimonial {
   image?: string | unknown;
 }
 
+export interface Chair {
+  name?: string;
+  affiliation?: string;
+  image?: string | unknown;
+  website?: string;
+  twitter?: string;
+  linkedin?: string;
+}
+
+
 export interface Input {
   type: HTMLInputTypeAttribute;
   name: string;
@@ -235,6 +245,12 @@ export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
   testimonials?: Array<Testimonial>;
   callToAction?: CallToAction;
 }
+
+export interface Chairs extends Omit<Headline, 'classes'>, Widget {
+  chairs?: Array<Chair>;
+  callToAction?: CallToAction;
+}
+
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {
   icons?: Array<string>;
