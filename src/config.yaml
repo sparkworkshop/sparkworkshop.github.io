@@ -11,7 +11,7 @@ metadata:
   title:
     default: SPARK Workshop
     template: '%s — AstroWind'
-  description: "\U0001F680 First International Workshop on Spatial Intelligence and Reasoning Enabled by Knowledge Graphs."
+  description: "\U0001F680 First International Workshop on Spatial Intelligence and Reasoning Enabled by Knowledge Graphs and Foundational Models."
   robots:
     index: true
     follow: true
