@@ -44,18 +44,26 @@ const {
               )}
             </div>
             <div class="mt-0.5">
-              {title && <h3 class={twMerge('text-lg', titleClass, itemClasses?.title)}>{title}</h3>}
-              {description && (
-                <p
-                  class={twMerge(`${title ? 'mt-3' : ''} text-muted`, descriptionClass, itemClasses?.description)}
-                  set:html={description}
-                />
+
+              {(title || description) && (
+                <h3 class={twMerge('text-lg', titleClass, itemClasses?.title)}>
+                  {title}
+                  {description && (
+                    <span
+                      class={twMerge('text-muted', descriptionClass, itemClasses?.description)}
+                      set:html={', ' + description}
+                    />
+                  )}
+                </h3>
               )}
+
+
               {callToAction && (
                 <div class={twMerge(`${title || description ? 'mt-3' : ''}`, actionClass, itemClasses?.actionClass)}>
                   <Button variant="link" {...callToAction} />
                 </div>
               )}
+
             </div>
           </div>
         </div>
