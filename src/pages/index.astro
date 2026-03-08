@@ -2,16 +2,14 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import HeroSpark from '~/components/widgets/HeroSpark.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import List from '~/components/widgets/List.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Team from '~/components/widgets/Team.astro';
+import TextSection from '~/components/widgets/TextSection.astro';
 import Image from '~/components/common/Image.astro';
 import sparkLogo from "~/assets/images/spark_logo_1.png";
 
@@ -56,14 +54,6 @@ const metadata = {
 					href="https://iswc2026.semanticweb.org/"
 				>
 					ISWC 2026
-					<svg
-						width="1em"
-						height="1em"
-						viewBox="0 0 24 24"
-						class="w-5 h-5 ml-1 inline-block"
-					>
-						<use href="#ai:tabler:rocket"></use>
-					</svg>
 				</a>
 
 				<span>| 25-26 October 2026, Bari, Italy</span>
@@ -72,149 +62,108 @@ const metadata = {
 
 
 		</Fragment>
-
-
-
-		
-
-
 	</HeroSpark>
 
-	<!-- Note Widget ******************* -->
 
-	<!-- <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" /> -->
 
-	<!-- Features Widget *************** -->
+<!-- About**************** -->
+
 
 <a name="about"></a>
-	<Features
-		id="features"
-		title="About SPARK 2026"
-		subtitle="Spatial intelligence plays a central role in understanding, modeling, and reasoning about complex real-world phenomena that are inherently geographic and spatiotemporal. With the growing availability of geodata and spatiotemporal data from sensors, Earth observation systems, digital twins, and location-aware services, there is an increasing need for methods that can effectively integrate spatial aspects into knowledge-based systems.
-This workshop aims to bring together researchers and practitioners working on spatial intelligence, geospatial data management, and spatiotemporal reasoning, with a particular focus on their integration within Semantic Web and Knowledge Graph ecosystems."
-		items={[
-			{
-				title: 'Spatial Knowledge Representation',
-				description:
-					'It seeks to support knowledge exchange on innovative approaches for representing, integrating, and reasoning over spatial and spatiotemporal data, bridging symbolic methods with sub-symbolic techniques, including machine learning, graph representation learning, and graph embeddings. The workshop invites research contributions that explore methods for modeling spatial and spatiotemporal information in knowledge graphs, advanced spatial reasoning, and the adoption of standards, vocabularies, and best practices to ensure interoperable geospatial and spatiotemporal data. ',
-				icon: 'tabler:brand-tailwind',
-			},
-			{
-				title: 'Applications',
-				description:
-					'Furthermore, the workshop will highlight practical applications in domains such as smart cities, environmental monitoring, mobility, crisis management, and digital twins, demonstrating how the integration of knowledge graphs and spatial intelligence can enable advanced analytics and real-world decision-making.',
-				icon: 'tabler:components',
-			},
-		]}
-	/>
 
+<TextSection
+	title="About SPARK 2026"
+	subtitle=""
+>
+
+<p>Spatial intelligence plays a central role in understanding, modeling, and reasoning about complex real-world phenomena that are inherently geographic and spatiotemporal. With the growing availability of geodata and spatiotemporal data from sensors, Earth observation systems, digital twins, and location-aware services, there is an increasing need for methods that can effectively integrate spatial aspects into knowledge-based systems.
+This workshop aims to bring together researchers and practitioners working on spatial intelligence, geospatial data management, and spatiotemporal reasoning, with a particular focus on their integration within Semantic Web and Knowledge Graph ecosystems. </p>
+<p>seeks to support knowledge exchange on innovative approaches for representing, integrating, and reasoning over spatial and spatiotemporal data, bridging symbolic methods with sub-symbolic techniques, including machine learning, graph representation learning, and graph embeddings. The workshop invites research contributions that explore methods for modeling spatial and spatiotemporal information in knowledge graphs, advanced spatial reasoning, and the adoption of standards, vocabularies, and best practices to ensure interoperable geospatial and spatiotemporal data.</p>
+
+<p>Furthermore, the workshop will highlight practical applications in domains such as smart cities, environmental monitoring, mobility, crisis management, and digital twins, demonstrating how the integration of knowledge graphs and spatial intelligence can enable advanced analytics and real-world decision-making.</p>
+
+</TextSection>
 
 	<!-- TOPICS Widget ******************* -->
 
 	<a name="topics"></a>
-	<FAQs
+
+
+<div class="inset-0 bg-blue-50 dark:bg-transparent">
+	<List
 		title="Topics of Interest"
 		subtitle="Topics of interest include, but are not limited to:"
 		classes={{ container: 'max-w-6xl' }}
-		items={[
-    {
-				title: 'Spatial and spatiotemporal reasoning in knowledge graphs',
-				description: ''
-		},
-    {
-				title: 'Geospatial Knowledge Graphs and ontologies',
-				description: ''
-		},
-    {
-				title: 'Semantic integration of geodata and heterogeneous spatial datasets',
-				description: ''
-		},
-    {
-				title: 'Spatial machine learning and AI for geospatial data',
-				description: ''
-		},
-    {
-				title: 'Spatial-temporal data modeling and analytics',
-				description: ''
-		},
-    {
-				title: 'Querying and retrieval of spatial knowledge',
-				description: ''
-		},
-    {
-				title: 'Reasoning over spatial relations, topologies, and hierarchies',
-				description: ''
-		},
-    {
-				title: 'Applications in smart cities, urban planning, and mobility',
-				description: ''
-		},
-    {
-				title: 'Environmental monitoring and climate data management',
-				description: ''
-		},
-    {
-				title: 'Crisis management and disaster response',
-				description: ''
-		},
-    {
-				title: 'Digital twins and simulation of physical environments',
-				description: ''
-		},
-		{
-				title: 'Geospatial IoT data integration and reasoning',
-				description: ''
-		},
-    {
-				title: 'Visualization, mapping, and spatial knowledge discovery',
-				description: ''
-			},
 
+
+		items={[
+			{title: 'Spatial and spatiotemporal reasoning in knowledge graphs'},
+			{title: 'Geospatial Knowledge Graphs and ontologies'},
+			{title: 'Semantic integration of geodata and heterogeneous spatial datasets'},
+			{title: 'Spatial machine learning and AI for geospatial data'},
+			{title: 'Spatial-temporal data modeling and analytics'},
+			{title: 'Querying and retrieval of spatial knowledge'},
+			{title: 'Reasoning over spatial relations, topologies, and hierarchies'},
+			{title: 'Applications in smart cities, urban planning, and mobility'},
+			{title: 'Environmental monitoring and climate data management'},
+			{title: 'Crisis management and disaster response'},
+			{title: 'Digital twins and simulation of physical environments'},
+			{title: 'Geospatial IoT data integration and reasoning'},
+			{title: 'Visualization, mapping, and spatial knowledge discovery'},
 		]}
 	/>
+</div>
+
+
+<!-- Importnat dates ****************** -->
+	<a name="important-dates"></a>
+
+	<!-- <div class="inset-0 bg-blue-50 dark:bg-transparent"> -->
+
+	<Steps
+		title="Important Dates"
+		items={[
+			{
+				title: 'Paper submission',
+				description:
+					"July 11th, 2026 (23:59, AoE timezone)",
+				icon: 'tabler:package',
+			},
+			{
+				title: 'Notification of acceptance',
+				description: 'August 8th, 2026',
+				icon: 'tabler:letter-case',
+			},
+			{
+				title: 'Camera ready due',
+				description: 'Step 16th, 2026',
+				icon: 'tabler:paint',
+			},
+			{
+				title: 'Workshop day',
+				description: 'October 25-26, 2026',
+				icon: 'tabler:check',
+			},
+		]}
+		image={{
+			src: '~/assets/images/dates.jpg',
+			alt: 'Steps image',
+		}}
+	/>
+<!-- </div> -->
 
 
 
-	<!-- Content Widget **************** -->
 
+<!-- Committees **************** -->
 
-    \item Saeid Amini, Isfahan University, Iran
-    \item Robert Blackwell, The Turing Institute, UK
-    \item Tony Cohn, University of Leeds
-    \item Elena Demidova, University of Bonn
-    \item Simon Gottschalk, L3S, Leibniz University Hannover
-    \item Krzysztof Janowicz, University of Vienna
-    \item Mehrdad Koohikamali, California State Polytechnic University, USA
-    \item Shain Mohammad, Chamran University, Iran
-    \item Mina Sadeghi, K.N. Toosi University, Iran
-    \item Hannah Schuster, WU Vienna, Austria
-		\item Shahrom Sohi, WU Vienna, Austria
-    \item Cogan Shimizu, Wright State University, USA
-    \item Dimitris Skoutas, ATHENA Research Center, Greece
-    \item Rui Zhu, University of Bristol, UK
-
-
-
-<!-- \subsection{Amin Anjomshoaa}
-\textbf{Vienna University of Economics and Business (WU Vienna), Austria} 
-Homepage: \href {https://anjomshoaa.github.io/}{https://anjomshoaa.github.io/}
-
-
-\subsection{Manolis Koubarakis}
-
-\textbf{National and Kapodistrian University of Athens, Greece} 
-Homepage: \href{https://cgi.di.uoa.gr/~koubarak/}{https://cgi.di.uoa.gr/~koubarak/}
-
-\textbf{Dublin City University, Ireland} 
-Homepage: \href{https://www.dcu.ie/historygeography/people/hamid-rabiei}{https://www.dcu.ie/historygeography/people/hamid-rabiei}	 -->
 
 <a name="committees"></a>
 
+<div class="inset-0 bg-blue-50 dark:bg-transparent">
 
 
 <Team
-  title="Organizing Committee"
-  subtitle="Workshop Co-chairs (alphabetically)"
     chairs={[
       {
         name: 'Amin Anjomshoaa',
@@ -250,255 +199,81 @@ Homepage: \href{https://www.dcu.ie/historygeography/people/hamid-rabiei}{https:/
 	]}
 />
 
-	<Content
-		isReversed
-		title="Organizing Committees"
+	<List
+		title="Program Committee"
+		subtitle="PC members in alphabetical order (Tentative list)"
+		classes={{ container: 'max-w-6xl' }}
+
 		items={[
-			{
-				title: 'Built on top of Astro 5.0',
-				description:
-					'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-			},
-			{
-				title: 'Styled using Tailwind CSS',
-				description:
-					'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-			},
-			{
-				title: 'Cross-browser compatibility',
-				description:
-					'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-			},
-		]}
-		image={{
-			src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-			alt: 'Colorful Image',
-		}}
-	>
-		<Fragment slot="content">
-			<h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-			Gain a competitive advantage by incorporating industry leading practices
-		</Fragment>
 
-		<Fragment slot="bg">
-			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-		</Fragment>
-	</Content>
+			{title: 'Saeid Amini, Isfahan University, Iran'},
+			{title: 'Robert Blackwell, The Turing Institute, UK'},
+			{title: 'Tony Cohn, University of Leeds'},
+			{title: 'Elena Demidova, University of Bonn'},
+			{title: 'Simon Gottschalk, L3S, Leibniz University Hannover'},
+			{title: 'Krzysztof Janowicz, University of Vienna'},
+			{title: 'Mehrdad Koohikamali, California State Polytechnic University, USA'},
+			{title: 'Shain Mohammad, Chamran University, Iran'},
+			{title: 'Mina Sadeghi, K.N. Toosi University, Iran'},
+			{title: 'Hannah Schuster, WU Vienna, Austria'},
+			{title: 'Shahrom Sohi, WU Vienna, Austria'},
+			{title: 'Cogan Shimizu, Wright State University, USA'},
+			{title: 'Dimitris Skoutas, ATHENA Research Center, Greece'},
+			{title: 'Rui Zhu, University of Bristol, UK'},
 
-	<!-- Content Widget **************** -->
-
-	<Content
-		isAfterContent
-		items={[
-			{
-				title: 'High level of customization',
-				description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-			},
-			{
-				title: 'Multiple layout possibilities',
-				description:
-					'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-			},
-			{
-				title: 'Fully responsive design',
-				description:
-					"Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-			},
-			{
-				title: 'Integration of media',
-				description:
-					'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-			},
-		]}
-		image={{
-			src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-			alt: 'Blueprint Image',
-		}}
-	>
-		<Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-		<Fragment slot="bg">
-			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-		</Fragment>
-	</Content>
-
-	<!-- Content Widget **************** -->
-
-	<Content
-		isReversed
-		isAfterContent
-		items={[
-			{
-				title: 'Enhanced user engagement',
-				description:
-					'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-			},
-			{
-				title: 'Continuous improvement',
-				description:
-					'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-			},
-			{
-				title: 'Time and resource efficiency',
-				description:
-					'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-			},
-			{
-				title: 'Community support',
-				description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-			},
-		]}
-		image={{
-			src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-			alt: 'Astronauts Image',
-		}}
-	>
-		<Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-		<Fragment slot="bg">
-			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-		</Fragment>
-	</Content>
-
-	<!-- Steps Widget ****************** -->
-	<a name="important-dates"></a>
-	<Steps
-		title="Important Dates"
-		items={[
-			{
-				title: 'Paper submission',
-				description:
-					"July 11th, 2026 (23:59, AoE timezone)",
-				icon: 'tabler:package',
-			},
-			{
-				title: 'Notification of acceptance',
-				description: 'August 8th, 2026',
-				icon: 'tabler:letter-case',
-			},
-			{
-				title: 'Camera ready due',
-				description: 'Step 16th, 2026',
-				icon: 'tabler:paint',
-			},
-			{
-				title: 'Workshop day',
-				description: 'October 25-26, 2026',
-				icon: 'tabler:check',
-			},
-		]}
-		image={{
-			src: '~/assets/images/dates.avif',
-			alt: 'Steps image',
-		}}
-	/>
-
-	<!-- Features2 Widget ************** -->
-
-	<Features2
-		title="Most used widgets"
-		subtitle="Provides frequently used components for building websites using Tailwind CSS"
-		tagline="Components"
-		items={[
-			{
-				title: 'Headers',
-				description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-				icon: 'flat-color-icons:template',
-			},
-			{
-				title: 'Heros',
-				description:
-					"Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-				icon: 'flat-color-icons:gallery',
-			},
-			{
-				title: 'Features',
-				description:
-					'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-				icon: 'flat-color-icons:approval',
-			},
-			{
-				title: 'Content',
-				description:
-					"Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-				icon: 'flat-color-icons:document',
-			},
-			{
-				title: 'Call-to-Action',
-				description:
-					'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-				icon: 'flat-color-icons:advertising',
-			},
-			{
-				title: 'Pricing',
-				description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-				icon: 'flat-color-icons:currency-exchange',
-			},
-			{
-				title: 'Testimonial',
-				description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-				icon: 'flat-color-icons:voice-presentation',
-			},
-			{
-				title: 'Contact',
-				description:
-					'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-				icon: 'flat-color-icons:business-contact',
-			},
-			{
-				title: 'Footers',
-				description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-				icon: 'flat-color-icons:database',
-			},
-		]}
-	>
-		<Fragment slot="bg">
-			<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-		</Fragment>
-	</Features2>
-
-	<!-- HighlightedPosts Widget ******* -->
-
-	<BlogLatestPosts
-		title="Find out more content in our Blog"
-		information={`The blog is used to display AstroWind documentation.
-												Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-												Astro is a very interesting technology. Thanks.
-								`}
-	/>
-
-
-	<!-- Stats Widget ****************** -->
-
-	<Stats
-		stats={[
-			{ title: 'Downloads', amount: '132K' },
-			{ title: 'Stars', amount: '24.8K' },
-			{ title: 'Forks', amount: '10.3K' },
-			{ title: 'Users', amount: '48.4K' },
 		]}
 	/>
+	
+</div>
 
-	<!-- CallToAction Widget *********** -->
 
-	<CallToAction
-		actions={[
-			{
-				variant: 'primary',
-				text: 'Get template',
-				href: 'https://github.com/arthelokyo/astrowind',
-				target: '_blank',
-				icon: 'tabler:download',
-			},
-		]}
-	>
-		<Fragment slot="title">
-			Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-		</Fragment>
 
-		<Fragment slot="subtitle">
-			Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-			waste more time! :P
-		</Fragment>
-	</CallToAction>
+<!-- Submission **************** -->
+
+
+<a name="submission"></a>
+
+<TextSection
+	title="Submission Guidelines"
+	subtitle=""
+	action = {{ 
+		text: 'Submit Paper', 
+		href: 'https://easychair.org/', 
+		target: '_blank',
+		variant: 'secondary'
+	}}
+>
+
+<p>Submissions are welcome in the following categories:</p>
+<ul>
+	<li>Full research papers (up to 12 pages)</li>
+	<li>Short research papers (up to 6 pages)</li>
+	<li>Vision/Position papers (up to 6 pages)</li>
+</ul>
+<p> All submissions may include unlimited pages for appendices and references.</p>
+
+<p>The workshop calls for novel and cross-over research contributions, addressing the growing use of geospatial data and Spatial Knowledge Graphs across a wide range of applications. Thei sincludes research in advanced spatial reasoning, knowledge management, and the development of intelligent, data-driven applications as well as aplied research that demonstrates the use of spatial intelligence and knowledge graphs in real-world scenarios such as smart city, environmental monitoring, mobility, and crisis management. </p>
+	
+	
+<p>Following Open Science principles, research papers may also be submitted as data resource papers or software papers. Data resource papers should describe the background and methodology used to create the spatial data sources and demonstrate their value to the community. Similarly, software papers should explain the motivation, methodology, and provide a detailed description of the spatial intelligence aspects, clearly justifying their relevance and usefulness for the community. To support reproducibility and transparent peer review, authors are requested to provide the DOIs of the datasets and software products described in their articles.</p>
+
+<p>SPARK also welcomes vision and position papers that offer perspectives on emerging research directions, novel or high-risk approaches, or new application areas that may require advances beyond the current state of the art. Vision papers are not required to present empirical results, but they should clearly articulate the motivation, significance, and open challenges within the proposed research area.</p>
+
+<p>Submissions must adhere to the CEURART template. Please use the latest version of the template in single-column format to prepare your submissions. You can download an offline version with the style files from http://ceur-ws.org/Vol-XXX/CEURART.zip. It also contains DOCX template files. Overleaf users may want to use the CEURART template available in Overleaf. Please adhere also to the CEUR-WS Policy on AI-Assisting Tools.</p>
+
+<p>Submissions for review must be in PDF format. They must be self-contained and written in English. Submissions that do not follow these guidelines, or do not view or print properly, will be rejected without review.</p>
+
+<p>SPARK will adopt a single-anonymous review process, and each paper will be reviewed by at least three Program Committee members.</p>
+
+<p>The proceedings of the workshops will be published on CEUR either as a standalone volume or in companion proceedings of ISWC 2026.</p>
+
+Submit your contributions to SPARK 2026 Easychair page: (Submission link to be available soon)
+
+
+</TextSection>
+
+
+
+
+
 </Layout>
