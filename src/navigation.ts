@@ -51,7 +51,7 @@ export const footerData = {
 	// 	{ text: 'Privacy Policy', href: getPermalink('/privacy') },
 	// ],
 	socialLinks: [
-		{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+		{ ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/SparlWorkshop' },
 		{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
 	],
 	footNote: `
