@@ -27,7 +27,7 @@ export const headerData = {
 		// 	href: '#contact',
 		// },
 	],
-	actions: [{ text: 'Submit Paper', href: 'https://easychair.org/', target: '_blank' }],
+	actions: [{ text: 'Submit Paper', href: ' https://easychair.org/conferences/?conf=spark2026', target: '_blank' }],
 };
 
 export const footerData = {
