@@ -33,26 +33,36 @@ export const headerData = {
 export const footerData = {
 	links: [
 		{
-			title: 'Links',
+			title: 'Useful links',
 			links: [
-				{ text: 'ISWC 2026', href: '#' },
-				{ text: 'Paper submission', href: '#' },
+				{ text: 'ISWC 2026', href: 'https://iswc2026.semanticweb.org/' },
+				{ text: 'Paper submission', href: 'https://easychair.org/conferences/?conf=spark2026' },
+				{ text: 'CEUR-ART style files', href: 'https://ceur-ws.org/HOWTOSUBMIT.html#CEURART' }
+
 			],
 		},
+
+		{
+			title: 'Follow us',
+			links: [
+				{ text: 'SparkWorkshop @ X', href: 'https://x.com/SparkWorkshop', icon: 'tabler:brand-x' },
+			],
+		},
+		
+
 		{
 			title: 'Contact us',
 			links: [
-				{ text: 'WU Vienna'},
+				{ text: 'WU Vienna<br/>Institute for Data, Process and Knowledge Management', href: 'https://www.wu.ac.at/en/dpkm/' 	},
 			],
 		},
+
 	],
 	// secondaryLinks: [
 	// 	{ text: 'Terms', href: getPermalink('/terms') },
 	// 	{ text: 'Privacy Policy', href: getPermalink('/privacy') },
 	// ],
 	socialLinks: [
-		{ ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/SparlWorkshop' },
-		{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
 	],
 	footNote: `
 	Copyright © SPARK 2026
