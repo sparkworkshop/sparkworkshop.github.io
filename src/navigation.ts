@@ -7,8 +7,8 @@ export const headerData = {
 			href: '#about',
 		},
 		{
-			text: 'Topics',
-			href: '#topics',
+			text: 'Call for Papers',
+			href: '#cfp',
 		},
 		{
 			text: 'Important Dates',

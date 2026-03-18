@@ -18,7 +18,6 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
-console.log('Steps items:', image?.src );
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>

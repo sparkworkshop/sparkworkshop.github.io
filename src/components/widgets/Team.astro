@@ -1,21 +1,19 @@
 ---
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 import type { Chairs as Props } from '~/types';
 
 const {
 	chairs = [],
-
 	id,
 	isDark = false,
 	classes = {},
-	bg = await Astro.slots.render('bg'),
 } = Astro.props;
+
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`}>
 	<Headline title="Organizing Committee" subtitle="Workshop Co-chairs (alphabetically)"/>
 
 
