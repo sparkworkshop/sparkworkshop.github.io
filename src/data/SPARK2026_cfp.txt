@@ -1,0 +1,68 @@
+====
+
+First International Workshop on Spatial Intelligence and Reasoning Enabled by Knowledge Graphs and Foundation Models @ ISWC 2026 2026 – SPARK 2026
+
+Bari, Italy
+
+October 25-26, 2026
+
+https://sparkworkshop.github.io/
+
+====
+
+Extended deadline for paper submission: ​**July 31, 2026 (23:59, AoE)**
+
+SPARK 2026 aims to foster knowledge exchange on innovative approaches for representing, integrating, and reasoning over spatial and spatiotemporal data by bridging symbolic methods with sub-symbolic techniques, including machine learning, graph representation learning, and graph embeddings. The workshop invites research contributions on methods for modeling spatial and spatiotemporal information in knowledge graphs, advanced spatial reasoning, and the adoption of standards, vocabularies, and best practices that promote interoperable geospatial and spatiotemporal data. It also welcomes contributions showcasing practical applications in domains such as smart cities, environmental monitoring, mobility, crisis management, and digital twins, demonstrating how the integration of knowledge graphs and spatial intelligence can support advanced analytics and informed real-world decision-making.
+
+
+Submissions are welcome in the following categories:
+
+ - Full research papers (up to 12 pages)
+ - Short research papers (up to 6 pages)
+ - Vision/Position papers (up to 6 pages)
+
+
+= Important Dates =
+
+– Paper Submissions: July 31, 2026 (23:59, AoE)
+– Acceptance Notifications: August 21, 2026
+– Conference Date: October 25-26, 2026
+
+
+= Topics of Interest =
+
+Broadly, we welcome submissions presenting novel and interdisciplinary research that addresses the growing use of geospatial data, geospatial knowledge graphs, and geospatial foundation models across a wide range of applications. A non-exhaustive list of suggested topics is below:
+
+ - Spatial and spatiotemporal reasoning in knowledge graphs
+ - Geospatial Knowledge Graphs and ontologies
+ - Semantic integration of geodata and heterogeneous spatial datasets
+ - Spatial machine learning and AI for geospatial data
+ - Spatial-temporal data modeling and analytics
+ - Querying and retrieval of spatial knowledge
+ - Reasoning over spatial relations, topologies, and hierarchies
+ - Applications in smart cities, urban planning, and mobility
+ - Environmental monitoring and climate data management
+ - Crisis management and disaster response
+ - Digital twins and simulation of physical environments
+ - Geospatial IoT data integration and reasoning
+ - Visualization, mapping, and spatial knowledge discovery
+ - Foundation models for spatial understanding
+ - Spatial knowledge graphs for urban digital twins
+ - Using foundation models for constructing spatial KGs
+ - KG Embedding & representation learning for Spatial Data
+ - Question Answering & Reasoning over Spatial KGs
+
+
+ = Author Guidelines and Submission =
+
+For Submission Guidelines please head to the online call for papers: https://sparkworkshop.github.io/#cfp
+
+Submissions will undergo a double-blind peer-review process. Accepted papers will be published in the joint ISWC 2026 Workshop Proceedings as a volume of CEUR-WS.org.
+
+Submission link: https://easychair.org/conferences/?conf=spark2026
+ 
+
+We are looking forward to your contribution!
+
+Amin Anjomshoaa, Manolis Koubarakis, Hamid Rabiei
+SPARK 2026 Organizers
