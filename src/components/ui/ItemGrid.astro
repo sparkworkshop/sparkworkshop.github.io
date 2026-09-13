@@ -51,7 +51,7 @@ const {
                   {description && (
                     <span
                       class={twMerge('text-muted', descriptionClass, itemClasses?.description)}
-                      set:html={', ' + description}
+                      set:html={'<br/>' + description}
                     />
                   )}
                 </h3>

@@ -15,14 +15,18 @@ export const headerData = {
 			href: '#important-dates',
 		},
 		{
+			text: 'Accepted Papers',
+			href: '#accepted-papers',
+		},
+		{
 			text: 'Committees',
 			href: '#committees',
 		},
-		{
-			text: 'Submission',
-			href: '#submission',
-		},
 		// {
+		// 	text: 'Submission',
+		// 	href: '#submission',
+		// },
+		// // {
 		// 	text: 'Contact',
 		// 	href: '#contact',
 		// },
