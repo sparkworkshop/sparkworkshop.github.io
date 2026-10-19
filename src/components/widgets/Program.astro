@@ -1,0 +1,91 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Program as Props } from '~/types';
+import { Icon } from 'astro-icon/components';
+import Button from '~/components/ui/Button.astro';
+import papers from '~/data/papers.json';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  openingTitle = await Astro.slots.render('openingTite'),
+  openingTime = await Astro.slots.render('openingTime'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+      <div class:list={['mx-auto max-w-3xl divide-y divide-gray-200 dark:divide-slate-700', classes?.list ?? '']}>
+
+
+        <summary class="flex cursor-pointer list-none items-left justify-between gap-4 py-5 outline-offset-4 [&::-webkit-details-marker]:hidden">
+          <h3 class="text-lg md:text-lg">{openingTime}</h3>
+          <h3 class="text-lg md:text-lg">{openingTitle}</h3>
+          <br/>  
+        </summary>
+
+        {papers.map((paper) => (
+          <details class="group intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 outline-offset-4 [&::-webkit-details-marker]:hidden">
+
+              <h3 class="text-lg md:text-lg">{paper.timeslot}</h3>
+              <h3 class="text-lg md:text-lg">{paper.title}
+                    <span
+                      class={'text-muted'}
+                      set:html={'<br/>' + paper.authors}
+                    />              
+              </h3>
+              <Icon
+                name={'tabler:chevron-down'}
+                class="h-6 w-6 shrink-0 text-primary transition-transform duration-200 group-open:rotate-180"
+              />
+            </summary>
+
+            {paper.abstract && (
+              <div class="pb-5 pr-10 rtl:pr-0 rtl:pl-10">
+                {paper.abstract && <p class="text-muted" set:html={paper.abstract} />}
+
+                <div class="mt-3">
+
+                  {paper.paperLink && (
+
+                    <Button
+                      variant="secondary"
+                      text="Read paper"
+                      href={paper.paperLink}
+                      icon="tabler:file-type-pdf"
+                      class="text-red-600 dark:text-red-400"
+                    />
+
+                  )}
+                  {paper.slidesLink && (
+
+                    <Button
+                      variant="secondary"
+                      text="View slides"
+                      href={paper.slidesLink}
+                      icon="tabler:presentation"
+                      class="text-blue-600 dark:text-blue-400"
+                    />
+
+                )}
+                </div>
+
+              </div>
+            )}
+          </details>
+        ))}
+      </div>
+
+
+
+</WidgetWrapper>

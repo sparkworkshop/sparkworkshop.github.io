@@ -65,6 +65,6 @@ const postCollection = defineCollection({
   }),
 });
 
-export const collections = {
-  post: postCollection,
-};
+// export const collections = {
+//   post: postCollection,
+// };

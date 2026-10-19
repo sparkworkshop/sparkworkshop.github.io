@@ -1,0 +1,42 @@
+[
+{
+    "title": "On the capabilities of large reasoning models for cardinal direction reasoning", 
+    "authors": "Orestis-Minas Kapopoulos, Vasileios Kyriakopoulos, Maria Tsourma, Despina-Athanasia Pantazi and Manolis Koubarakis",
+    "timeslot": "09:10-09:30",
+    "paperLink": "/papers/SPARK-paper9.pdf",
+    "abstract": "Spatial reasoning has been an established area of research since around 1990 and a lot of interesting related work has been done by researchers in Geography, AI and Databases. With the arrival of large language models, there has also been research on evaluating their spatial reasoning capabilities. In this paper, we contribute to this emerging research area and evaluate 5 large reasoning models (GPT-5.4, gemini-3-flash-preview, phi-4, llama-4-maverick and magistral-small) on the task of computing the composition table of a well-known cardinal direction calculus."
+},
+
+{
+    "title": "Does Cognitive Plausibility Matter for Agentic GeoAI? Testing Source–Target Asymmetry in Distance Estimation", 
+    "authors": "Krzysztof Janowicz, Alexandra Fortacz-Lazan, Seyedeh Negin Kosari, Linus Lulkiewicz, Carl Feldmann, Sebastian-Paul Lambrecht, Bastian Maximilian Arnold, Fabio Spitzenstätter, Alexander Filipsky, Brenda Tarn, Nelly Dorrmann, Martin Jakob Winder, Paul Vitovec and Sebastian Kerstein",
+    "timeslot": "09:30-09:50",
+    "paperLink": "/papers/SPARK-paper6.pdf",
+    "abstract": "AI agents are increasingly acting on our behalf, either directly as agentic systems or indirectly as synthetic participants or personas used to model and stand in for human behavior. For instance, recent work even explores whether such AI agents can be used for public participatory planning. Such work relies on the often implicit assumption that these agents can meaningfully mimic (groups of) humans. This, in part, explains the rapid rise in work that studies how generative AI performs tasks such as topological reasoning or even map generation. While the results are mixed, frontier reasoning models can now indeed perform many human-level tasks. But what if we are asking the wrong questions? If AI agents are supposed to meaningfully mimic human behavior, e.g., for public participatory planning, would they not also have to mimic human heuristics and cognitive patterns? Put differently, most current work focuses on what agents can do, not whether they do it similarly to humans. While this may not matter for arithmetic or note-taking, it certainly matters for evacuation simulations, mobility, privacy, behavioral geography, and spatial decision-making. Hence, in this paper, we are not going to focus on the task alone, here distance estimation, but also on whether we can observe asymmetry in these estimations under source→target reversal, as reported by classic geographic analysis literature from the past. Our results indicate that distance estimation is indeed subject to direction, but that this observation is more likely related to prompt sensitivity (prompt direction) than to human-like cognitive bias."
+},
+
+{
+    "title": "SOGO: A Scaling Ontology for Geospatial Observations in Knowledge Graphs", 
+    "authors": "Amin Anjomshoaa ",
+    "timeslot": "09:50-10:10",
+    "paperLink": "/papers/SPARK-paper8.pdf",
+    "abstract": "Ontologies and knowledge graphs have emerged as effective tools for data integration and enabling information interoperability, particularly in the context of spatiotemporal observations. In this setting, data aggregation and disaggregation play a crucial role in multilevel modeling, facilitating the transfer and preservation of information across different spatial and temporal scales. While existing methods outside the domain of knowledge graphs address aspects of data scaling, there is currently no standardized or widely accepted approach for modeling and implementing such mechanisms using ontologies and knowledge graphs. This gap highlights the need for a high-level and lightweight ontology capable of describing scalable observations based on their spatiotemporal properties. In this work, we articulate the necessity of such an ontology and introduce a work-in-progress scaling ontology that defines the core classes and properties required to represent scaling processes in spatial knowledge graphs. As a proof of concept, we demonstrate the application of the proposed ontology in upscaling and downscaling scenarios, highlighting its application in domains involving observations and sensor data."
+},
+
+{
+    "title": "BrepPMIOnt: Ontology for Semantic Validation of Computer-aided Design Models", 
+    "authors": "Julian Gebhard, Ratan Bahadur, Yuebo Wang and Steffen Staab ",
+    "timeslot": "10:10-10:30",
+    "paperLink": "/papers/SPARK-paper2.pdf",
+    "abstract": "Boundary representation (B-Rep) models solids in computer-aided design (CAD). It describes a solid through a graph of vertices, edges, and faces that represents its topology, with each element assigned a geometric realization (a point, a curve, a surface). Product manufacturing information (PMI) annotates topological entities with information for the manufacturer, such as geometric tolerances. CAD models require early validation to determine whether they are correct, combining topology, geometry, annotations, and numerical checks. Existing CAD standards expose this data through format-specific vocabularies and do not provide a reusable semantic vocabulary for validation constraints. Therefore, a constraint that holds for one format does not necessarily hold for another without reimplementing the same reasoning. We present BrepPMIOnt, an OWL 2 EL ontology for a bounded B-Rep and PMI fragment, together with a mapping from CAD instances to RDF and a SHACLbased validation pipeline. OWL 2 EL axioms classify opology–geometry combinations, reducing the need for redundant reasoning in SHACL shapes, while SPARQL extension functions call external CAD libraries for numerical geometric checks. We implement the approach for one standardized B-Rep and PMI format and test it on 11 public, open-source models, showing the approach’s feasibility."
+},
+
+{
+    "title": "CartoGraph: Generating Reference Answers for Map Visual Question Answering Benchmarks", 
+    "authors": "Rene Dorsch, Andreas Harth and Daniel Henselmann",
+    "timeslot": "10:30-10:50",
+    "paperLink": "/papers/SPARK-paper3.pdf",
+    "abstract": "In a map visual question answering benchmark, each reference answer must match the content shown in its associated map image. Benchmark constructors obtain such answers by interpreting the map image manually, which scales poorly to complex maps, or by extracting them from the geospatial source data, which can include content that the image does not show. We present CartoGraph, a map-production system that generates map images together with their reference answers. While producing a map, CartoGraph records in a map-content graph which source features appear in the map image and how they are drawn. CartoGraph renders the map image from this graph and question-specific queries derive the reference answers from the same graph. Because the image and the answers share one recorded map content, each answer is restricted to the content its map image shows and requires no manual interpretation. An initial implementation for the OpenStreetMap Standard Map, evaluated across 200 map images at zoom levels 16 and 17, demonstrates that the map image and the reference answers for street-name enumeration and spatial-relation questions can be derived from the same map-content graph."
+}
+
+]

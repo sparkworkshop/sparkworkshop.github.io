@@ -22,6 +22,36 @@
 
 
 
+### Accepted Papers
+
+<div class="inset-0 bg-blue-50 dark:bg-transparent">
+	<List
+		title="Accepted Papers"
+		subtitle="organized alphabetically by paper title"
+		columns = 1
+		classes={{ container: 'max-w-6xl' }}
+
+		items={[
+			{title: 'BrepPMIOnt: Ontology for Semantic Validation of Computer-aided Design Models', 
+			description: 'Julian Gebhard, Ratan Bahadur, Yuebo Wang and Steffen Staab '},
+
+			{title: 'CartoGraph: Generating Reference Answers for Map Visual Question Answering Benchmarks', 
+			description: 'Rene Dorsch, Andreas Harth and Daniel Henselmann'},
+
+			{title: 'Does Cognitive Plausibility Matter for Agentic GeoAI? Testing Source–Target Asymmetry in Distance Estimation', 
+			description: 'Krzysztof Janowicz, Alexandra Fortacz-Lazan, Seyedeh Negin Kosari, Linus Lulkiewicz, Carl Feldmann, Sebastian-Paul Lambrecht, Bastian Maximilian Arnold, Fabio Spitzenstätter, Alexander Filipsky, Brenda Tarn, Nelly Dorrmann, Martin Jakob Winder, Paul Vitovec and Sebastian Kerstein'},
+
+			{title: 'On the capabilities of large reasoning models for cardinal direction reasoning', 
+			description: 'Orestis-Minas Kapopoulos, Vasileios Kyriakopoulos, Maria Tsourma, Despina-Athanasia Pantazi and Manolis Koubarakis'},
+
+			{title: 'SOGO: A Scaling Ontology for Geospatial Observations in Knowledge Graphs', description: 'Amin Anjomshoaa '}
+
+		]}
+	/>
+</div>
+
+
+
 <br>
 
 ![AstroWind Theme Screenshot](https://raw.githubusercontent.com/arthelokyo/.github/main/resources/astrowind/screenshot-astrowind-1.0.png)

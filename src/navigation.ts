@@ -7,16 +7,16 @@ export const headerData = {
 			href: '#about',
 		},
 		{
+			text: 'Workshop Program',
+			href: '#program',
+		},
+		{
 			text: 'Call for Papers',
 			href: '#cfp',
 		},
 		{
 			text: 'Important Dates',
 			href: '#important-dates',
-		},
-		{
-			text: 'Accepted Papers',
-			href: '#accepted-papers',
 		},
 		{
 			text: 'Committees',

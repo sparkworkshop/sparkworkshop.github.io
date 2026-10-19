@@ -294,4 +294,19 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
   callToAction?: CallToAction;
 }
 
+export interface Paper {
+  title: string;
+  authors: string;
+  abstract?: string;
+  timeslot?: string;
+  paperLink?: string;
+  slidesLink?: string;
+}
+
+export interface Program extends Omit<Headline, 'classes'>, Widget {
+  openingTitle?: string;
+  openingTime?: string;
+  items?: Array<Paper>;
+}
+
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
