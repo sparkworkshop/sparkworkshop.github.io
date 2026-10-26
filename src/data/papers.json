@@ -20,6 +20,7 @@
     "authors": "Amin Anjomshoaa ",
     "timeslot": "09:50-10:10",
     "paperLink": "/papers/SPARK-paper8.pdf",
+    "slidesLink": "/slides/SPARK-paper8_slides.pdf",
     "abstract": "Ontologies and knowledge graphs have emerged as effective tools for data integration and enabling information interoperability, particularly in the context of spatiotemporal observations. In this setting, data aggregation and disaggregation play a crucial role in multilevel modeling, facilitating the transfer and preservation of information across different spatial and temporal scales. While existing methods outside the domain of knowledge graphs address aspects of data scaling, there is currently no standardized or widely accepted approach for modeling and implementing such mechanisms using ontologies and knowledge graphs. This gap highlights the need for a high-level and lightweight ontology capable of describing scalable observations based on their spatiotemporal properties. In this work, we articulate the necessity of such an ontology and introduce a work-in-progress scaling ontology that defines the core classes and properties required to represent scaling processes in spatial knowledge graphs. As a proof of concept, we demonstrate the application of the proposed ontology in upscaling and downscaling scenarios, highlighting its application in domains involving observations and sensor data."
 },
 
